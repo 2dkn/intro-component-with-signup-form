@@ -1,0 +1,42 @@
+@use "../sass/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: $red;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.btn-header {
+}
+
+.container {
+}
+
+.words {
+}
+
+.fillout-sheet {
+}
+
+.form {
+}
+
+.btn-footer {
+}
