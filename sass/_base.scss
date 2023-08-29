@@ -25,14 +25,24 @@ body {
 
 .btn-header {
 }
+.words,
+.fillout-sheet {
+  flex: 1;
+}
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .words {
 }
 
 .fillout-sheet {
+  background-color: white;
+  height: 25rem;
 }
 
 .form {
