@@ -11,9 +11,20 @@
   box-sizing: inherit;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
+}
+
+p {
+  font-weight: 100;
 }
 
 body {
@@ -35,14 +46,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 5rem;
 }
 
 .words {
+  color: white;
 }
 
 .fillout-sheet {
   background-color: white;
-  height: 25rem;
+  min-height: 40rem;
 }
 
 .form {
