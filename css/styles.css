@@ -32,6 +32,25 @@ body {
   min-height: 100vh;
 }
 
+.btn-header {
+  border: none;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: -6rem;
+  left: 0rem;
+  width: 100%;
+  padding: 1rem;
+  min-height: 4rem;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
 .words,
 .fillout-sheet {
   flex: 1;
@@ -41,6 +60,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   min-height: 100vh;
   padding: 5rem;
 }
@@ -50,8 +70,46 @@ body {
 }
 
 .fillout-sheet {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   min-height: 40rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  gap: 4rem;
+  box-shadow: 1px 8px 0px rgba(0, 0, 0, 0.18);
+}
+
+.fillout-sheet input {
+  width: 100%;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  border-width: thin;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btn-footer {
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  box-shadow: 0px 3px 0px hsl(154, 57%, 47%);
+  font-size: 1.2rem;
+}
+
+.terms {
+  font-size: 0.8rem;
+  color: hsl(246, 25%, 77%);
+}
+
+.services {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
 }
 
 /*# sourceMappingURL=styles.css.map */
