@@ -53,12 +53,13 @@ body {
   font-size: 1.1rem;
   cursor: pointer;
   background-color: $blue;
-  box-shadow: 1px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
+.btn-header,
 .words,
 .fillout-sheet {
-  flex: 1;
+  flex: 2;
 }
 
 .container {
@@ -67,32 +68,42 @@ body {
   align-items: center;
   align-content: center;
   min-height: 100vh;
-  padding: 5rem;
+  padding: 2rem;
+  gap: 5rem;
+  margin: 0;
 }
 
 .words {
   color: white;
+  max-width: 35rem;
 }
 
 .fillout-sheet {
   display: flex;
+  align-self: end;
   flex-direction: column;
   background-color: white;
-  min-height: 40rem;
-  padding: 3rem;
+  max-height: 70rem;
+  max-width: 45rem;
+  padding: 3.3rem;
   border-radius: 1rem;
   position: relative;
-  gap: 4rem;
+  gap: 1.5rem;
   box-shadow: 1px 8px 0px rgba(0, 0, 0, 0.18);
 }
 
 .fillout-sheet input {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   border-width: thin;
   font-size: 1rem;
   font-weight: 700;
+  border: 0.1rem solid $grayblue;
+}
+
+.fillout-sheet input:focus {
+  border: 0.1rem solid red;
 }
 
 .btn-footer {
@@ -104,11 +115,17 @@ body {
   color: white;
   box-shadow: 0px 3px 0px hsl(154, 57%, 47%);
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn-footer:hover {
+  background-color: hsl(154, 72%, 55%);
 }
 
 .terms {
   font-size: 0.8rem;
   color: $grayblue;
+  align-self: center;
 }
 
 .services {
