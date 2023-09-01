@@ -68,6 +68,11 @@ body {
   margin: 0;
 }
 
+@media (max-width: 70em) {
+  .container {
+    display: grid;
+  }
+}
 .words {
   color: white;
   max-width: 35rem;
