@@ -68,9 +68,26 @@ body {
   margin: 0;
 }
 
-@media (max-width: 70em) {
+@media (max-width: 24em) {
   .container {
     display: grid;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+  }
+  h1 {
+    font-size: 2rem;
+    align-self: center;
+  }
+  .fillout-sheet {
+    padding: 0.2rem;
+  }
+  p {
+    padding-bottom: 2rem;
+  }
+  .btn-header {
+    padding: 1.5rem;
+    font-size: 1rem;
   }
 }
 .words {
@@ -101,9 +118,12 @@ body {
   font-weight: 700;
   border: 0.1rem solid hsl(246, 25%, 77%);
 }
-
-.fillout-sheet input:focus {
-  border: 0.1rem solid red;
+.fillout-sheet input:active, .fillout-sheet input:focus {
+  outline: none;
+  border-color: hsl(248, 32%, 49%);
+}
+.fillout-sheet input:not(.btn-footer) {
+  outline: none;
 }
 
 .btn-footer {
