@@ -81,26 +81,39 @@ body {
   .container {
     display: grid;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     position: relative;
+    min-height: 100vh;
   }
 
   h1 {
     font-size: 2rem;
-    align-self: center;
+    text-align: center;
   }
 
   .fillout-sheet {
-    padding: none;
+    padding: 2rem !important;
+  }
+
+  .fillout-sheet input {
+    width: 100%;
+    border-width: thin;
   }
 
   p {
     padding-bottom: 2rem;
+    text-align: center;
   }
 
   .btn-header {
     padding: 1.5rem;
     font-size: 1rem;
+  }
+
+  .btn-footer {
+    padding: 1.5rem !important;
+    font-size: 1rem !important;
   }
 }
 .words {
