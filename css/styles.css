@@ -51,6 +51,10 @@ body {
   box-shadow: 1px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
+.btn-header:active {
+  transform: scale(0.99);
+}
+
 .btn-header,
 .words,
 .fillout-sheet {
@@ -80,7 +84,7 @@ body {
     align-self: center;
   }
   .fillout-sheet {
-    padding: 0.2rem;
+    padding: none;
   }
   p {
     padding-bottom: 2rem;
@@ -97,7 +101,6 @@ body {
 
 .fillout-sheet {
   display: flex;
-  align-self: end;
   flex-direction: column;
   background-color: white;
   max-height: 70rem;
@@ -138,8 +141,9 @@ body {
   cursor: pointer;
 }
 
-.btn-footer:hover {
+.btn-footer:hover:active {
   background-color: hsl(154, 72%, 55%);
+  transform: scale(0.99);
 }
 
 .terms {
@@ -152,6 +156,10 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: hsl(0, 100%, 74%);
+}
+
+.error {
+  color: red;
 }
 
 /*# sourceMappingURL=styles.css.map */
