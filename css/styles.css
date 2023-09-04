@@ -120,6 +120,7 @@ body {
   font-size: 1rem;
   font-weight: 700;
   border: 0.1rem solid hsl(246, 25%, 77%);
+  border-color: hsl(246, 25%, 77%);
 }
 .fillout-sheet input:active, .fillout-sheet input:focus {
   outline: none;
@@ -160,6 +161,8 @@ body {
 
 .error {
   color: red;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
