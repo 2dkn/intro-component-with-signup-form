@@ -12,21 +12,26 @@ function validateForm() {
 
   if (!isValidName(firstName)) {
     displayError("firstNameError", "First Name cannot be empty");
-    addErrorBorders(firstName);
+    addErrorBorders("firstName");
   } else {
     clearError("firstNameError");
+    removeErrorBorders("firstName");
   }
 
   if (!isValidName(lastName)) {
     displayError("lastNameError", "Last Name cannot be empty");
+    addErrorBorders("lastName");
   } else {
     clearError("lastNameError");
+    removeErrorBorders("lastName");
   }
 
   if (!isValidEmail(email)) {
     displayError("emailError", "Invalid email format");
+    addErrorBorders("email");
   } else {
     clearError("emailError");
+    removeErrorBorders("email");
   }
 
   if (!isValidPassword(password)) {
@@ -34,6 +39,10 @@ function validateForm() {
       "passwordError",
       "Password must be at least 8 characters long "
     );
+    addErrorBorders("password");
+  } else {
+    clearError("passwordError");
+    removeErrorBorders("password");
   }
 }
 
@@ -62,6 +71,14 @@ function clearError(id) {
   errorElement.style.display = "none";
 }
 
-function addErrorBorders() {}
+function addErrorBorders(id) {
+  const errorBorder = document.getElementById(id);
+  errorBorder.style.border = ".2rem solid red"; // thin was the problem. changing to solid worked.
+}
+
+function removeErrorBorders(id) {
+  const errorBorder = document.getElementById(id);
+  errorBorder.style.border = "";
+}
 
 console.log("test");
