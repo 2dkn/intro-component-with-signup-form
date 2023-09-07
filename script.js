@@ -11,7 +11,11 @@ function validateForm() {
   const password = document.getElementById("password").value;
 
   if (!isValidName(firstName)) {
-    displayError("firstNameError", "First Name cannot be empty");
+    displayError(
+      "firstNameError",
+      "First Name cannot be empty",
+      "images/icon-error.svg"
+    );
     addErrorBorders("firstName");
   } else {
     clearError("firstNameError");
@@ -19,7 +23,11 @@ function validateForm() {
   }
 
   if (!isValidName(lastName)) {
-    displayError("lastNameError", "Last Name cannot be empty");
+    displayError(
+      "lastNameError",
+      "Last Name cannot be empty",
+      "images/icon-error.svg"
+    );
     addErrorBorders("lastName");
   } else {
     clearError("lastNameError");
@@ -27,7 +35,7 @@ function validateForm() {
   }
 
   if (!isValidEmail(email)) {
-    displayError("emailError", "Invalid email format");
+    displayError("emailError", "Invalid email format", "images/icon-error.svg");
     addErrorBorders("email");
   } else {
     clearError("emailError");
@@ -37,7 +45,8 @@ function validateForm() {
   if (!isValidPassword(password)) {
     displayError(
       "passwordError",
-      "Password must be at least 8 characters long "
+      "Password must be at least 8 characters long",
+      "images/icon-error.svg"
     );
     addErrorBorders("password");
   } else {
@@ -59,16 +68,20 @@ function isValidPassword(password) {
   return password.length >= 8;
 }
 
-function displayError(id, message) {
+function displayError(id, message, image) {
   const errorElement = document.getElementById(id);
+  const errorImage = document.getElementById(id.replace("Error", ""));
   errorElement.textContent = message;
   errorElement.style.display = "block";
+  errorImage.style.backgroundImage = `url(${image})`;
 }
 
 function clearError(id) {
   const errorElement = document.getElementById(id);
+  const errorImage = document.getElementById(id.replace("Error", ""));
   errorElement.textContent = "";
   errorElement.style.display = "none";
+  errorImage.style.backgroundImage = "none";
 }
 
 function addErrorBorders(id) {
