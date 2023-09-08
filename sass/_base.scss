@@ -142,13 +142,15 @@ body {
 .fillout-sheet input {
   width: 100%;
   padding: 1.5rem 1rem;
+  // padding-right: 10rem;
   border-radius: 0.5rem;
   margin: 0;
   border-width: thin;
   font-size: 1rem;
   font-weight: 700;
-  border: 0.1rem solid $grayblue;
-  border-color: $grayblue;
+  border: 0.125rem solid $grayblue;
+  border-color: rgb(219, 216, 216);
+  align-items: center;
 
   &:active,
   &:focus {
@@ -197,10 +199,11 @@ body {
   font-size: 0.9rem;
   text-align: right;
   line-height: 0.1rem;
+  // overflow-wrap: break-word;
 }
 
 .error-image {
-  position: relative;
-  background-position: 28rem center;
   background-repeat: no-repeat;
+  background-position: 90% 50%;
+  margin-top: 2rem;
 }
