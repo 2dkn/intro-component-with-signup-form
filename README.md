@@ -28,8 +28,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Site]()
-- Live Site URL:[Live Site]()
+- Solution URL: [Solution Site](https://www.frontendmentor.io/solutions/introcomponentwithsignupform-4DsKVAwF2H)
+- Live Site URL:[Live Site](https://intro-component-with-signup-form-2dkn.netlify.app/)
 
 ### Built With
 
