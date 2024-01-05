@@ -40,68 +40,70 @@
     <title>Intro Component With Sign Up Form</title>
   </head>
   <body>
-    <section class="container">
-      <div class="words">
-        <h1>Learn to code by watching others</h1>
-        <p>
-          See how experienced developers solve problems in real-time. Watching
-          scripted tutorials is great, but understanding how developers think is
-          invaluable.
+    <main>
+      <section class="container">
+        <div class="words">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="fillout-sheet">
+          <button class="btn-header">
+            <b>Try it free 7 days</b> then $20/mo. thereafter
+          </button>
+
+          <input
+            type="text"
+            id="firstName"
+            class="error-image"
+            placeholder="First Name"
+          />
+          <p class="error" id="firstNameError" style="display: none"></p>
+
+          <input
+            type="text"
+            id="lastName"
+            class="error-image"
+            placeholder="Last Name"
+          />
+          <p class="error" id="lastNameError" style="display: none"></p>
+
+          <input
+            type="email"
+            id="email"
+            class="error-image"
+            placeholder="Email"
+          />
+          <p class="error" id="emailError" style="display: none"></p>
+
+          <input
+            type="password"
+            id="password"
+            class="error-image"
+            placeholder="Password"
+          />
+          <p class="error" id="passwordError" style="display: none"></p>
+
+          <button class="btn-footer" id="submitButton">
+            CLAIM YOUR FREE TRAIL
+          </button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="services">Terms and Services</a>
+          </p>
+        </div>
+      </section>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Kevin Neely</a>.
         </p>
-      </div>
-      <div class="fillout-sheet">
-        <button class="btn-header">
-          <b>Try it free 7 days</b> then $20/mo. thereafter
-        </button>
-
-        <input
-          type="text"
-          id="firstName"
-          class="error-image"
-          placeholder="First Name"
-        />
-        <p class="error" id="firstNameError" style="display: none"></p>
-
-        <input
-          type="text"
-          id="lastName"
-          class="error-image"
-          placeholder="Last Name"
-        />
-        <p class="error" id="lastNameError" style="display: none"></p>
-
-        <input
-          type="email"
-          id="email"
-          class="error-image"
-          placeholder="Email"
-        />
-        <p class="error" id="emailError" style="display: none"></p>
-
-        <input
-          type="password"
-          id="password"
-          class="error-image"
-          placeholder="Password"
-        />
-        <p class="error" id="passwordError" style="display: none"></p>
-
-        <button class="btn-footer" id="submitButton">
-          CLAIM YOUR FREE TRAIL
-        </button>
-        <p class="terms">
-          By clicking the button, you are agreeing to our
-          <a href="#" class="services">Terms and Services</a>
-        </p>
-      </div>
-    </section>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Kevin Neely</a>.
-      </p>
-    </footer>
+      </footer>
+    </main>
   </body>
 </html>
